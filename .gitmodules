@@ -1,3 +1,6 @@
 [submodule "HD-Clustering"]
 	path = HD-Clustering
 	url = https://github.com/xavierrouth/HD-Clustering
+[submodule "HD-Classification"]
+	path = HD-Classification
+	url = https://github.com/xavierrouth/HD-Classification
