@@ -32,7 +32,6 @@ print("")
 input("Press enter to move on to HD-Clustering.")
 
 os.chdir("../..")
-
 subprocess.run("clear")
 print("=========================================")
 print("              HD-Clustering              ")
@@ -66,3 +65,4 @@ print("")
 input("Press enter to exit.")
 
 os.chdir("../..")
+subprocess.run("clear")
