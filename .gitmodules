@@ -1,0 +1,3 @@
+[submodule "HD-Clustering"]
+	path = HD-Clustering
+	url = https://github.com/xavierrouth/HD-Clustering
