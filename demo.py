@@ -21,12 +21,15 @@ while True:
 		break
 
 print("")
-print("Compiling HD-Classification.")
+print("Compiling HD-Classification (26 classes, 617 features, 3072 hypervector dims,", mlc, "MLC bits,", wv, "write-verify cycles).")
 print("")
 myenv["MLC"] = str(mlc)
 myenv["WRITE_VERIFY"] = str(wv)
 subprocess.run(["make", "clean"], env=myenv)
 subprocess.run(["make", "-j", "host-sim"], env=myenv)
+print("")
+print("Running HD-Classification.")
+print("")
 subprocess.run(["./host-sim", "1"])
 print("")
 input("Press enter to move on to HD-Clustering.")
@@ -53,12 +56,15 @@ while True:
 		break
 
 print("")
-print("Compiling HD-Clustering.")
+print("Compiling HD-Clustering (26 clusters, 617 features, 2048 hypervector dims,", mlc, "MLC bits,", wv, "write-verify cycles).")
 print("")
 myenv["MLC"] = str(mlc)
 myenv["WRITE_VERIFY"] = str(wv)
 subprocess.run(["make", "clean"], env=myenv)
 subprocess.run(["make", "-j", "host-sim"], env=myenv)
+print("")
+print("Running HD-Clustering.")
+print("")
 subprocess.run(["./host-sim", "3"])
 subprocess.run(["python3", "mutual_info.py"])
 print("")
