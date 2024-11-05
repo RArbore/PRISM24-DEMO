@@ -33,8 +33,8 @@ while True:
 
 print("")
 input("Press enter to compile.")
-pane = window.split(direction=PaneDirection.Right)
-pane.send_keys("nvim ../../hd_classification_example", enter=True)
+pane = window.split()
+pane.send_keys("nvim ../../hd_classification_example.cpp", enter=True)
 print("")
 print("Compiling HD-Classification (26 classes, 617 features, 3072 hypervector dims,", mlc, "MLC bits,", wv, "write-verify cycles).")
 print("")
@@ -73,8 +73,8 @@ while True:
 
 print("")
 input("Press enter to compile.")
-pane = window.split(direction=PaneDirection.Right)
-pane.send_keys("nvim ../../hd_clustering_example", enter=True)
+pane = window.split()
+pane.send_keys("nvim ../../hd_clustering_example.cpp", enter=True)
 print("")
 print("Compiling HD-Clustering (26 clusters, 617 features, 2048 hypervector dims,", mlc, "MLC bits,", wv, "write-verify cycles).")
 print("")
